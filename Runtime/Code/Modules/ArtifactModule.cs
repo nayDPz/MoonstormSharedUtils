@@ -95,9 +95,9 @@ namespace MSU
         {
             foreach(var (artifact, contentPiece) in MoonstormArtifacts)
             {
-                if(!(artifact == artifactDef))
+                if(artifact == artifactDef)
                 {
-                    contentPiece.OnArtifactEnabled();
+                    contentPiece.OnArtifactDisabled();
                 }
             }
         }
@@ -106,7 +106,7 @@ namespace MSU
         {
             foreach(var (artifact, contentPiece) in MoonstormArtifacts)
             {
-                if (!(artifact == artifactDef))
+                if (artifact == artifactDef)
                 {
                     contentPiece.OnArtifactEnabled();
                 }
